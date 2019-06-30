@@ -1,0 +1,123 @@
+#header{
+    height: 32px;
+    line-height: 32px;
+    background: #a9180a;
+    border-bottom:1px solid #a9180a;
+}
+.header-login{
+    
+    height: 32px;
+    /* line-height: 32px; */
+    float: left;
+}
+.header-login span,.header-login a{
+    color:#fff;
+    font-size: 12px;
+}
+.header-login a{
+    /* 去掉a标签的下划线 */
+    text-decoration: none;
+    padding:0 10px 0 20px;
+}
+.header-list{
+    float:right;
+    /* background: #00ffff; */
+}
+/* 子代选择器 */
+.header-list > li{
+    float: left;
+    padding:0 14px 0 10px;
+    /* background: #ff0000; */
+}
+.header-list > li > a{
+    color:#fff;
+}
+.list-arrow{
+    /*  */
+    position: relative;
+}
+.sub-list{
+    position: absolute;
+    left:0px;
+    top:32px;
+    background: #fff;
+    padding: 10px;
+    border:1px solid #ccc;
+    border-top:none;
+    display: none;
+}
+.sub-list-tb{
+    width:72px;
+    line-height: 20px;
+}
+.sub-list > li > a{
+    color:#999;
+}
+/* class名为.list-arrow 的li  hover的时候  找到它里边class名为sub-list 的ul 显示 */
+.list-arrow:hover .sub-list{
+    display: block;
+}
+.list-arrow:hover{
+    background: #fff;
+}
+.list-arrow:hover > a{
+    color:#ff0036;
+    text-decoration: underline;
+}
+/* lihover 箭头转 */
+.list-arrow:hover .arrow {
+    transform: rotate(180deg);
+    transform-origin: 50% 25%;
+}
+.sub-list .list-tb-baby:hover{
+    color:#ff0036;
+    text-decoration: underline;
+}
+.my-car{
+    font-size:12px;
+    color:greenyellow;
+}
+/* header 结束 */
+/* 搜索 开始 */
+.logo{
+    width: 240px;
+    height: 130px;
+    float: left;
+}
+.search-box{
+    float: left;
+    margin-left:125px;
+    margin-top:38px;
+}
+.search-content{
+    width: 623px;
+    height: 36px;
+    border:2px solid #ff0036;
+}
+.search-input{
+    width: 491px;
+    height: 36px;
+    border:none;
+    /* 输入框 选中样式   */
+    outline: none;
+    text-indent: 5px;
+    float: left;
+}
+
+/* 623 491 132 */
+.search-btn{
+    width: 132px;
+    height: 36px;
+    background: #ff0036;
+    border:none;
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    color:#fff;
+    /* 文字之前空隙 */
+    letter-spacing: 5px;
+}
+
+
+
+/* 搜索 结束 */
