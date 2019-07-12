@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      *{
+            margin: 0;
+            padding: 0;
+        }
+        #header{
+            width: 1280px;
+            height: 120px;
+            background:white;
+            /* margin:100px; */
+            margin: 0 auto;
+        }
+        .header_logo{
+            float: left;
+            margin-top: 37px;
+            margin-left:139px; 
+        }
+        .search-content{
+            float: right;
+            margin-top:45px;
+            margin-right: 50px;
+            width: 130px;
+            height: 30px;
+            background:rgba(241,243,246,1);
+            border-radius: 5px;
+
+        }
+        .search-input{
+            width: 100px;
+            height: 30px;
+            border:none;
+            background:rgba(241,243,246,1);
+            border-radius: 5px;
+            text-indent: 5px;
+            outline: none;
+            float: left;
+        }
+        ul{
+            float: right;
+            list-style: none;
+            margin-top: 50px;
+            margin-right: 70px;
+            overflow: hidden;
+        }
+        ul li{
+            float: left;
+            padding: 0 27px;
+            font-size: 15px;
+            font-family: PTSans-Regular;
+            color:black;
+            position: relative;
+            margin-left: -1px;
+        }
+        .services{
+            color:#00AEFF;
+        }
+        ul li::after{
+            content:'';
+            width:1px;
+            height:15px;
+            background: #999999;
+            position: absolute;
+            left:0;
+            top:4px;
+        }
+        .btn{
+            width: 30px;
+            height: 30px;
+            float: left;
+            border-radius: 0 5px 5px 0;
+            background: url(../images/search.png) no-repeat 10px 9px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img class="header_logo" src="../images/切图1.jpg" alt=""> 
+         <div class="search-content">
+                <input class="search-input" placeholder="search" type="text">
+                <span class="btn"></span>
+            </div>
+        <ul>
+            <li>ABOUT</li>
+            <li class="services">SERVICES</li>
+            <li>WORKS</li>
+            <li>BLOG</li>
+            <li>CONTACT US</li>
+        </ul>
+      
+    </div>
+
+</body>
+</html>
