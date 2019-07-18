@@ -32,3 +32,8 @@ ul{
     top:15px;
     transition:transform 0.2s linear;
 }
+.cleafix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
