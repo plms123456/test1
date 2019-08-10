@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: #000000;
+            perspective: 800px;
+        }
+        #container{
+            width: 200px;
+            height: 200px;
+            margin:200px auto;
+            /* background: #ff0000; */
+            /* border: 1px dotted #fff; */
+            position: relative;
+            transform-style: preserve-3d;
+            animation: run 5s linear infinite ;
+        }
+        @keyframes run {
+            100%{
+                transform: rotateY(360deg);
+            }
+        }
+        #container div{
+            width: 200px;
+            height: 200px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 10px;
+            font-size: 50px;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            left:0px;
+            top:0px;
+        }
+        .one{
+            transform: rotateY(-90deg) translateZ(100px)  ;
+        }
+        .two{
+            transform: rotateY(90deg) translateZ(100px) ;
+        }
+        .three{
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .four{
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .five{
+            transform: rotateY(180deg) translateZ(100px);
+        }
+        .six{
+            transform: translateZ(100px);
+        }
+        img{
+        opacity:0.4;
+        filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */
+        box-shadow:10px 10px 10px 10px rgba(0, 0, 255, 0.582);
+        }
+        img:hover{
+        opacity:1.0;
+        filter:alpha(opacity=100); /* 针对 IE8 以及更早的版本 */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="one"><img src="images/10.jpg" alt=""></div>
+        <div class="two"><img src="images/2.jpg" alt=""></div>
+        <div class="three"><img src="images/1.jpg" alt=""></div>
+        <div class="four"><img src="images/3.jpg" alt=""></div>
+        <div class="five"><img src="images/4.jpg" alt=""></div>
+        <div class="six"><img src="images/5.jpg" alt=""></div>
+   
+    </div>
+
+</body>
+</html>
